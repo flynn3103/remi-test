@@ -1,0 +1,5 @@
+transaction_id,customer_id,transaction_time,source_amount,destination_amount,execution_plan,pool_ids,order_book_ids,protocol_fee_token,protocol_fee_amount,total_amount_usd,total_fees_usd
+1110,11100,2023-10-28 15:30:50,3.03346811,,unknown,[],[],sol,0.0075836703,303.346811,0.7583670275
+22200,22201,2023-10-28 15:31:50,0.0,0.0,pool,[34],[23578333],,0.0,0.0,0.0
+11100,11101,2023-10-28 15:31:50,0.0,0.0,pool,[34],[23578333],,0.0,0.0,0.0
+2220,22200,2023-10-28 15:30:50,3.03346811,,unknown,[],[],sol,0.0075836703,303.346811,0.7583670275

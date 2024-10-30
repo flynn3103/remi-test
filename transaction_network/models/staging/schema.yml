@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_transactions
+    description: "Staging layer for transaction data"
+    columns:
+      - name: customer_id
+        description: "The unique identifier for a customer"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('transactions')
+              field: customer_id
+      
+      - name: day_time
+        description: "The date of the transaction"
+        tests:
+          - not_null
+      
+      - name: protocol_fee_amount
+        description: "The fee amount for the transaction"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+              inclusive: true
